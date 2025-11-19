@@ -4,7 +4,7 @@ const RACES = ["Humain"];
 // XP TABLE exponentielle
 const XP_TABLE = [0];
 const BASE_XP = 100;
-const XP_COEF = 1.15;
+const XP_COEF = 1.05;
 for (let lvl = 1; lvl <= 76; lvl++) {
   XP_TABLE[lvl] = Math.floor(BASE_XP * Math.pow(XP_COEF, lvl - 1));
 }
