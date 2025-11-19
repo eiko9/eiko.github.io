@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>JDR Lineage2 - Fiche</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Fiche Personnage</h1>
+  <label>Nom: <input type="text" id="name"></label>
+  <label>Race: <select id="raceSelect"></select></label>
+  <label>Classe: <select id="classSelect"></select> (<span id="classDisplay"></span>)</label>
+  <label>Karma: <input type="number" id="karma"></label>
+  <label>XP à ajouter: <input type="number" id="xpInput"> <button id="addXPBtn">Ajouter XP</button></label>
+
+  <div id="xpContainer"><div id="xpBar"></div></div>
+  <div id="xpText"></div>
+  <div>Niveau: <span id="levelDisplay"></span></div>
+  <div id="evoMessage"></div>
+
+  <button id="resetBtn">Reset</button><br><br>
+  <button id="exportBtn">Exporter le personnage</button>
+  <input type="file" id="importInput" accept=".json"><br><br>
+
+  <h3>Stats:</h3>
+  <ul id="statsList"></ul>
+
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

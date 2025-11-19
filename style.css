@@ -1,0 +1,81 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212;
+  color: #eee;
+  margin: 20px;
+}
+
+h1, h3 {
+  color: gold;
+  text-shadow: 0 0 5px #fff;
+}
+
+label {
+  display: block;
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+input, select, button {
+  padding: 5px 8px;
+  margin-left: 5px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background: #222;
+  color: #eee;
+}
+
+button {
+  cursor: pointer;
+  background: #444;
+  transition: 0.2s;
+}
+
+button:hover {
+  background: gold;
+  color: #000;
+}
+
+#xpContainer {
+  width: 100%;
+  max-width: 400px;
+  height: 20px;
+  background: #222;
+  border: 1px solid #555;
+  border-radius: 5px;
+  margin: 5px 0;
+  overflow: hidden;
+}
+
+#xpBar {
+  height: 100%;
+  background: gold;
+  width: 0%;
+  transition: width 0.5s;
+}
+
+#xpText, #levelDisplay, #evoMessage {
+  margin: 5px 0;
+}
+
+#statsList {
+  list-style: none;
+  padding-left: 0;
+}
+
+#statsList li {
+  background: #222;
+  padding: 4px 8px;
+  margin: 2px 0;
+  border-radius: 4px;
+}
+
+#evoMessage {
+  color: lime;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+input[type="file"] {
+  color: #eee;
+}
